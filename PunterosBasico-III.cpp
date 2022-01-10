@@ -27,7 +27,7 @@ int main()
     system("clear");
 
     cout << "\tManejo básico de punteros a zonas de memoria III" << endl;
-    cout << "\tMemoria Stack" << endl << endl;
+    cout << "\t\e[0;33mMemoria Stack\e[0m" << endl << endl;
     int *punA;
     int varA;
 
@@ -42,9 +42,12 @@ int main()
     punA = &varA; // Asignar puntero a la dirección del objeto
     cout << "Almacena punA = &varA: \t\t" << Blanco << punA << NC << endl << endl;
 
-    cout << "Desreferencia punA es recuperar la dirección de memoria de varA" << endl;
+    cout << "Desreferencia es acceder al contenido almacenado en la variable varA\n";
+    cout << "accediendo directamente a la dirección de memoria de varA guardada en\n";
+    cout << "la variable puntero *punA\n\n";
+
     cout << "Cambiamos valor contenido en varA modificando directamente la posición" << endl;
-    cout << "de memoria de varA modificando *punA (solicitado por terminal)" << endl << endl;
+    cout << "de memoria de varA desreferenciando *punA (solicitado por terminal)" << endl << endl;
 
     cout << Azul << "Ingresa nuevo valor para *punA\t" << Blanco;
     cin >> *punA;
@@ -52,9 +55,13 @@ int main()
     cout << NC << "Nuevo valor almacenado en varA \t" << Blanco << varA << NC << endl;
     cout << endl;
     cout << "\n********************************************************************************" << endl;
-    cout << "\tMemoria Heap" << endl << endl;
+    cout << "\t\e[0;33mMemoria Heap\e[0m" << endl << endl;
 
-    int *punB = new int;
+    cout << "Al crear un puntero a una ubicación en la memoria heap con la palabra\n";
+    cout << "reservada \"new\", la dirección de memoria asignada se devuelve en la\n";
+    cout << "variable puntero, en este ejemplo en punB\n\n";
+
+    int *punB = new int; 
     cout << Azul << "Ingresa un valor para almacenar en *punB\t\t" << Blanco;
     cin >> *punB;
     // *punB = 12;
