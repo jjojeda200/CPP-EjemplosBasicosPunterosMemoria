@@ -80,6 +80,7 @@ int main(int argc, char *argv[])
     pNumero->pintar();
 
     // destructor del constructor lanzado al crear *pNumero
+    pNumero = nullptr;
     delete pNumero;
 
     // ultimo destructor automático
