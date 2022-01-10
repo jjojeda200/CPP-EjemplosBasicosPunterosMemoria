@@ -17,3 +17,7 @@ Repa00.cpp: Repaso básico punteros
 10-01-2022
 
 Repa01.cpp: Repaso punteros memoria y utilización en clases
+
+10-01-2022
+
+Repa02.cpp: Repaso pasando parámetros a funciones por medio de punteros memoria
