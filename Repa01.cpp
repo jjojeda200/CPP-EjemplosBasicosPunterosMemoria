@@ -8,6 +8,8 @@
        almacenada en una variable puntero.
      & Para mostrar la dirección de memoria de cualquier variable.
 
+    Compilar con -lstdc++
+    gcc Repa01.cpp -o Repa01 -lstdc++
 */
 #include <iostream>
 

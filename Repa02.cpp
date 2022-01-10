@@ -1,6 +1,6 @@
 /*
     José Juan Ojeda Granados, 10-01-2022
-    Repaso punteros memoria
+    Repaso pasando parámetros a funciones por medio de punteros memoria
 
     Manejo básico de punteros a zonas de memoria
      * Para declarar variable apuntadora.
@@ -8,20 +8,28 @@
        almacenada en una variable puntero.
      & Para mostrar la dirección de memoria de cualquier variable.
 
+    Compilar con -lstdc++
+    gcc Repa02.cpp -o Repa02 -lstdc++
 */
 #include <iostream>
 
+int funsionPunteros(int *punA, int *punB)
+{
+
+    return 0;
+}
 
 int main(int argc, char *argv[])
 {
     system("clear");
 
-    printf("\t\e[0;33mMemoria Stack\e[0m\n");
-    printf("\e[0;34mSe crea la variable puntero *punA y se guarda a null\e[0m\n");
+    printf("\e[0;34mSe crean varA y varB y se almacena los valores 20 y 40 respectivamente\e[0m\n");
+    int varA = 20;
+    int varB = 40;
+
     int *punA = nullptr;
     printf("*punA\t%p\n", punA);
-    printf("\e[0;34mSe crea la variable varA y se almacena el valor 20\e[0m\n");
-    int varA = 20;
+
     printf("varA\t%d\n", varA);
     printf("\e[0;34mSe almacena en punA la dirección de memoria que el sistema asigno a varA\e[0m\n");
     punA = &varA;
