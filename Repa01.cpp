@@ -4,7 +4,7 @@
 
     Manejo básico de punteros a zonas de memoria
      * Para declarar variable apuntadora.
-     * Para desreferenciar, acceder directamente al contenido de una ubicación de memoria 
+     * Para desreferenciar, acceder directamente al contenido de una ubicación de memoria
        almacenada en una variable puntero.
      & Para mostrar la dirección de memoria de cualquier variable.
 
@@ -19,16 +19,17 @@ public:
     int obtenerNumero();
     void configurarNumero(int numero);
     void pintar();
+
 private:
     int elNumero;
 };
 
-Numero::Numero()    // Constructor
+Numero::Numero() // Constructor
 {
     printf("\e[0;37mConstructor ...\e[0m\n");
 }
 
-Numero::~Numero()   // Destructor
+Numero::~Numero() // Destructor
 {
     printf("\e[0;37mDestructor ...\e[0m\n");
 }
@@ -60,13 +61,23 @@ int main(int argc, char *argv[])
     Primer.pintar();
 
     printf("\nSe crea el objeto por puntero en heap, y se muestra la dirección\n");
-     // Crea el objeto por puntero y lanza el constructor, se cierra con el delete
+    // Crea el objeto por puntero y lanza el constructor, se cierra con el delete
     Numero *pNumero = new Numero;
     printf("pNumero\t\t\e[0;33m%p\e[0m\n", pNumero);
 
     printf("Se llama al método guardar numero por puntero y se almacena el 20, se muestra\n");
     (*pNumero).configurarNumero(20);
     (*pNumero).pintar();
+    /*
+    El operador flecha (->) se utiliza cuando se dispone de la dirección de un
+    objeto (en el puntero correspondiente), en lugar del nombre del objeto.
+    Es más habitual utilizar el operador flecha que el operador punto.
+    La sintaxis (*puntero).miembro es incómoda de leer y escribir, así que usa la
+    sintaxis flecha (->) de manera que puntero->miembro es equivalente a (*puntero).miembro.
+    Ambas opciones son validas pero se aconseja usar el operador flecha (->).
+    */
+    pNumero->configurarNumero(40);
+    pNumero->pintar();
 
     // destructor del constructor lanzado al crear *pNumero
     delete pNumero;
