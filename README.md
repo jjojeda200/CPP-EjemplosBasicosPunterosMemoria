@@ -14,3 +14,6 @@ PunterosBasico-I.cpp: Practica avanzada de manejo de listas, punteros a memoria 
 
 Repa00.cpp: Repaso básico punteros
 
+10-01-2022
+
+Repa01.cpp: Repaso punteros memoria y utilización en clases

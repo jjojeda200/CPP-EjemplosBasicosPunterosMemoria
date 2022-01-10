@@ -4,7 +4,7 @@
 
     Manejo básico de punteros a zonas de memoria
      * Para declarar variable apuntadora.
-     * Para desreferenciar, acceder directamente al contenido de una ubicación de menoria 
+     * Para desreferenciar, acceder directamente al contenido de una ubicación de memoria 
        almacenada en una variable puntero.
      & Para mostrar la dirección de memoria de cualquier variable.
 
