@@ -9,7 +9,7 @@
      & Para mostrar la dirección de memoria de cualquier variable.
 
     Compilar con -lstdc++
-    gcc Repa00.cpp -o Repa00 -lstdc++
+    gcc PunterosBasico-IV.cpp -o PunterosBasico-IV -lstdc++
 */
 #include <iostream>
 
