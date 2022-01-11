@@ -12,7 +12,7 @@ PunterosBasico-I.cpp: Practica avanzada de manejo de listas, punteros a memoria 
 
 10-01-2022
 
-PunterosBasicoIV.cpp: Repaso básico punteros
+PunterosBasico-IV.cpp: Repaso básico punteros
 
 10-01-2022
 
@@ -24,4 +24,4 @@ PunterosFunciones00.cpp: Pasando parámetros a funciones por medio de punteros m
 
 11-01-2022
 
-PunterosDobles00.cpp: 
+PunterosDobles00.cpp: Punteros dobles, puntero de puntero

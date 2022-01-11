@@ -1,6 +1,6 @@
 /*
-    José Juan Ojeda Granados, 10-01-2022
-    Repaso punteros memoria
+    José Juan Ojeda Granados, 11-01-2022
+    Punteros dobles, puntero de puntero
 
     Manejo básico de punteros a zonas de memoria
      * Para declarar variable apuntadora.
@@ -9,7 +9,7 @@
      & Para mostrar la dirección de memoria de cualquier variable.
 
     Compilar con -lstdc++
-    gcc Repa00.cpp -o Repa00 -lstdc++
+    gcc PunterosDobles00.cpp -o PunterosDobles00 -lstdc++
 */
 #include <iostream>
 
