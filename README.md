@@ -24,4 +24,4 @@ PunterosFunciones00.cpp: Pasando parámetros a funciones por medio de punteros m
 
 11-01-2022
 
-PunterosDobles00.cpp: Punteros dobles, puntero de puntero
+PunterosDobles00.cpp: Punteros dobles, puntero de puntero - Memoria estática y dinámica
