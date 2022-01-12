@@ -14,13 +14,13 @@
     Pasar Argumentos a Funciones por Referencia con Punteros y pasar Argumentos a Funciones por Referencia con Referencias.
 
     Compilar con -lstdc++
-    gcc PunterosFunciones00.cpp -o PunterosFunciones00 -lstdc++
+    gcc PunterosReferenciaFunciones.cpp -o PunterosReferenciaFunciones -lstdc++
 */
 #include <iostream>
 
-void funsionPuntero(int *punA, int *punB)
+void funsionPuntero(int *punA)
 {
-    printf("\n\e[0;33mFunción Puntero\e[0m\n");
+    printf("\e[0;33mFunción Puntero\e[0m\n");
     printf("\e[0;34mSumamos 10 a la variable\e[0m\n");
     printf("punA:\t%p\n", punA);
     *punA = *punA + 10;
@@ -32,18 +32,19 @@ void funsionPuntero(int *punA, int *punB)
     // return; // no necesario al no devolver ningún valor ;-)
 }
 
-void funsionReferencia(int *punB)
+void funsionReferencia(int &refB)
 {
     printf("\e[0;33mFunción Referencia\e[0m\n");
     printf("\e[0;34mSumamos 10 a la variable\e[0m\n");
-    printf("punB:\t%p\n", punB);
-    *punB = *punB + 10;
-    printf("*punB = *punB + 10\t%d\n", *punB);
+    printf("refB:\t%d\n", refB);
+    refB = refB + 10;
+    printf("refB = refB + 10\t%d\n", refB);
 
-    printf("\e[0;34mpunB son variables locales de la función\e[0m\n");
-    printf("\e[0;34mInicializan con las direcciones pasadas al llamar a la función\e[0m\n");
+    printf("\e[0;34mrefB es una variable referenciada a varB local de la función\e[0m\n");
+    printf("\e[0;34mrefB es una referencia a varB, que no una copia, por ello\e[0m\n");
+    printf("\e[0;34mno es necesario devolver ningún valor\e[0m\n");
 
-    // return; // no necesario al no devolver ningún valor ;-)
+    // return; //  ;-)
 }
 
 int main(int argc, char *argv[])
@@ -58,21 +59,20 @@ int main(int argc, char *argv[])
     printf("int varB =\t%d\n", varB);
 
     int *punA = nullptr;
-    int *punB = nullptr;
     printf("*punA = nullptr\t%p\n", punA);
-    printf("*punB = nullptr\t%p\n", punB);
 
-    printf("\e[0;34mLlamada a la función Punteros pasando las direcciones de memoria de varA y varB\e[0m\n");
-    funsionPunteros(&varA, &varB);
+    printf("\n\e[0;34mLlamada a la función Puntero pasando la dirección de memoria de varA\e[0m\n");
+    funsionPuntero(&varA);
 
-    printf("\e[0;33mContinua Función Main\e[0m\n");
-    printf("\e[0;34mSe muestra el nuevo valor de varA y varB modificados por la función\e[0m\n");
+    printf("\n\e[0;34mLlamada a la función Referencia pasando varB\e[0m\n");
+    funsionReferencia(varB);
+
+    printf("\n\e[0;33mContinua Función Main\e[0m\n");
+    printf("\e[0;34mSe muestra el nuevo valor de varA y varB modificados por las funciones\e[0m\n");
     printf("varA =\t%d\n", varA);
     printf("varB =\t%d\n", varB);
-    printf("*punA = nullptr\t%p\n", punA);
-    printf("*punB = nullptr\t%p\n", punB);
 
-    printf("\e[0;33mDetalle Varios\e[0m\n");
+    printf("\n\e[0;33mDetalle Varios\e[0m\n");
     int varX{};
     int* punX{&varX};
     printf ("int varX{}; donde varX = %d\n", varX);
