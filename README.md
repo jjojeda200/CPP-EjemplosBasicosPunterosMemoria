@@ -8,7 +8,7 @@ PunterosBasico-[I, II, III].cpp: Manejo de punteros a memoria stack y heap
 
 06-12-2021
 
-PunterosBasico-I.cpp: Practica avanzada de manejo de listas, punteros a memoria stack y heap
+DesarrolloListas.cpp: Practica avanzada de manejo de listas, punteros a memoria stack y heap
 
 10-01-2022
 
@@ -25,3 +25,8 @@ PunterosFunciones00.cpp: Pasando parámetros a funciones por medio de punteros m
 11-01-2022
 
 PunterosDobles00.cpp: Punteros dobles, puntero de puntero - Memoria estática y dinámica
+
+12-01-2022
+
+PunterosReferenciaFunciones.cpp: Pasando parámetros a funciones por medio de referencia
+
