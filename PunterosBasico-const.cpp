@@ -21,18 +21,34 @@ void funcionCasos()
   printf("\e[0;33mCaso 4º    const int *const puntero_constante_a_constante = &constante;\e[0m\n\n");
 }
 
+void modoUso()
+{
+  printf("\t\t\e[0;33mCaracteristicas de const\e[0m\n\n");
+  printf("\e[0;33mUso: Indica el número de caso a mostrar (1 al 4)\e[0m\n\n");
+  funcionCasos();
+  exit(0);
+}
+
 int main(int argc, char *argv[])
 {
   system("clear");
 
-  int varX = atoi(argv[1]);
-
-  if (argc != 2 && varX < 1 || varX > 4)
+  if (argc != 2)
   {
-    printf("%s \e[0;33mUso: Indica el número de caso a mostrar (1 al 4)\e[0m\n", argv[0]);
-    funcionCasos();
-    return 1;
+    modoUso();
   }
+  else 
+  {
+    int varX = atoi(argv[1]);
+    //;
+    //
+    if (varX < 1 || varX > 4)
+    {
+    modoUso();
+      
+    }
+  }
+  int varX = atoi(argv[1]);
 
   /*
           int        variable = 1;
