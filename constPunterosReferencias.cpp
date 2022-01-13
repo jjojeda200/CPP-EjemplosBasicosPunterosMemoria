@@ -9,7 +9,7 @@
      & Para mostrar la dirección de memoria de cualquier variable.
 
     Compilar con -lstdc++
-    gcc PunterosBasico-const.cpp -o PunterosBasico-const -lstdc++
+    gcc constPunterosReferencias.cpp -o constPunterosReferencias.cpp -lstdc++
 */
 #include <iostream>
 
@@ -40,12 +40,9 @@ int main(int argc, char *argv[])
   else 
   {
     int varX = atoi(argv[1]);
-    //;
-    //
     if (varX < 1 || varX > 4)
     {
     modoUso();
-      
     }
   }
   int varX = atoi(argv[1]);

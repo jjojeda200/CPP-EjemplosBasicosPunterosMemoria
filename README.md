@@ -16,17 +16,24 @@ PunterosBasico-IV.cpp: Repaso básico punteros
 
 10-01-2022
 
-PunterosClases00.cpp: Punteros memoria y utilización con clases
+PunterosClases.cpp: Punteros memoria y utilización con clases
 
 10-01-2022
 
-PunterosFunciones00.cpp: Pasando parámetros a funciones por medio de punteros memoria
+PunterosFunciones.cpp: Pasando parámetros a funciones por medio de punteros memoria
 
 11-01-2022
 
-PunterosDobles00.cpp: Punteros dobles, puntero de puntero - Memoria estática y dinámica
+PunterosDobles.cpp: Punteros dobles, puntero de puntero - Memoria estática y dinámica
 
 12-01-2022
 
 PunterosReferenciaFunciones.cpp: Pasando parámetros a funciones por medio de referencia
 
+12-01-2022
+
+constPunterosReferencias.cpp: const -> punteros memoria y referencias
+
+13-01-2022
+
+constClases.cpp: const -> Clases
