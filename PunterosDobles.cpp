@@ -72,8 +72,8 @@ int main(int argc, char *argv[])
     printf("\e[0;34mLlamada a la función Puntero pasando la dirección de memoria de varA\e[0m\n");
     funsionPuntero(&varA);
 
-    printf("\e[0;34mLlamada a la función Puntero Doble pasando la dirección de memoria de punB");
-    printf("que a su vez contiene la dirección de varA\e[0m\n");
+    printf("\e[0;34mLlamada a la función Puntero Doble pasando la dirección de memoria\n");
+    printf(" de punB que a su vez contiene la dirección de varA\e[0m\n");
     funsionPunteroDoble(&punB);
 
     printf("\n\e[0;33mContinua Función Main\e[0m\n");
