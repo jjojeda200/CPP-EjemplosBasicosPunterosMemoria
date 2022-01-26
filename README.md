@@ -8,7 +8,7 @@ PunterosBasico-[I, II, III].cpp: Manejo de punteros a memoria stack y heap
 
 06-12-2021
 
-DesarrolloListas.cpp: Practica avanzada de manejo de listas, punteros a memoria stack y heap
+DesarrolloListas.cpp: Práctica avanzada de manejo de listas, punteros a memoria stack y heap
 
 10-01-2022
 

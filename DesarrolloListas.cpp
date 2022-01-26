@@ -1,6 +1,6 @@
 /*
 José Juan Ojeda Granados, 06-12-2021
-Practica avanzada de manejo de listas, punteros a memoria stack y heap
+Práctica avanzada de manejo de listas, punteros a memoria stack y heap
 */
 #include <iostream>
 //#include <string.h>

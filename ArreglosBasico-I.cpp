@@ -1,6 +1,6 @@
 /*
     José Juan Ojeda Granados, 25-01-2022
-    Practica básica I de manejo de punteros de memoria
+    Práctica básica I de manejo de arreglos
 
     Manejo básico de Arrays, Arreglos, Matriz, Vectores
 
@@ -79,8 +79,7 @@ void multMA()
     showMA3x3(c);
 }
 
-// Matrices Dinámicas
-void dinamicMA()
+void dinamicMA() // Matrices Dinámicas
 {
     cout << "\n\e[0;33m  Matrices Dinámicas\e[0m\n";
     int rows;
@@ -118,7 +117,7 @@ void dinamicMA()
 int main()
 {
     system("clear");
-    staticMA();
+    staticMA();         // Matrices Dinámicas
     cout << '\n';
     multMA();
     dinamicMA();
