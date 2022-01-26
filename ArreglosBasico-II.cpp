@@ -1,84 +1,53 @@
 /*
-    José Juan Ojeda Granados, 22-01-2022
-    Notas conversiones cast :--)
+    José Juan Ojeda Granados, 26-01-2022
+    Práctica básica II de manejo de arreglos
+
+    Manejo básico de Arrays, Arreglos, Matriz, Vectores
+
+    Manejo básico de punteros a zonas de memoria
+     * Para declarar variable apuntadora.
+     * Para desreferenciar, acceder directamente al contenido de una ubicación de memoria
+       almacenada en una variable puntero.
+     & Para mostrar la dirección de memoria de cualquier variable.
 */
 #include <vector>
 #include <iostream>
 using std::cout;
-using std::string;
-
-struct sUno
-{
-    const char *fUno() const
-    {
-        return "Función uno de la struct sUno!\n";
-    }
-};
-
-struct sDos : sUno
-{
-    const char *fUno() const
-    {
-        return "Función uno de la struct sDos!\n";
-    }
-};
+using std::vector;
 
 int main()
 {
-    system("clear");
 
+     system("clear");
     // ***************************************************************************
-    printf("\t\n\033[33mConversión de datos: explicita\033[0m\n");
-    int valA = 10.2;
-    int valB = valA + 5.0;
-    printf("imprime int valB --> valA + 5.0; = %d\n", valB);
-    // Operadores de molde (cast)
-    // cast en tiempo de compilación --> tipo_de_dato (expresión)
-    valB = int(44.59);
-    printf("imprime valB --> int(44.59); = %d\n", valB);
-    valB = 2.5 - float(18.0 + 8) + 5;
-    printf("imprime valB --> 2.5 - float(18.0 + 8) + 5; = %d\n", valB);
+    cout << "\t\033[33mVectores y Vectores de Punteros\033[0m\n\n";
+    int LongVector{6};
 
-    // ***************************************************************************
-    printf("\t\n\033[33mConversión de datos: implícita\033[0m\n");
-    // cast en tiempo de ejecución --> static_cast < nuevo-tipo > ( expresión )
-    valB = static_cast<int>(5.5);
-    printf("imprime valB --> static_cast<int>(5.5); = %d\n", valB);
-    int valC = static_cast<int>(3.14);
-    printf("imprime valC --> int valC = static_cast<int>(3.14); = %d\n", valC);
+    vector<int> vUno = static_cast<vector<int>>(LongVector);
+    cout << "Crea vector vector utilizando static_cast;\n";
+    cout << "Ejecuta --> vector<int> vUno = static_cast<vector<int>>(LongVector);\n";
+    cout << "Imprime --> vUno.size() = " << vUno.size() << "\n\n";
 
-    // ***************************************************************************
-    cout << "\n";
-    std::vector<int> v = static_cast<std::vector<int>>(6);
-    std::cout << "Ejecuta --> std::vector<int> v = static_cast<std::vector<int>>(6);\n";
-    std::cout << "Imprime --> v.size() = " << v.size() << "\n\n";
-
-    // v[i] es equivalente a: *((&v[0]) + i)
-    for (int i = 0; i <= v.size(); i++)
+    cout << "Bucle for para rellenar e imprimir todo el vector\n";
+    // vUno[i] es equivalente a: *((&vUno[0]) + i)
+    for (int i = 0; i < vUno.size(); i++)
     {
-        v[i] = i;
+        vUno[i] = i;
+        cout << "Valor almacenado en el vector: \033[34m" << vUno[i] 
+        << "\033[0m Dirección en memoria: \033[34m" << &vUno[i] << "\033[0m\n";
     }
-    
-
-    for (int i = 0; i <= v.size() + 2; i++)
-        std::cout << v[i] << " " << &v[i] << "\n";
-
     cout << "\n";
+
     // ***************************************************************************
-    /*
-            Manejo básico de punteros a zonas de memoria
-             * Para declarar variable apuntadora.
-             * Para desreferenciar, acceder directamente al contenido de una ubicación de memoria
-               almacenada en una variable puntero.
-             & Para mostrar la dirección de memoria de cualquier variable.
-        */
-    std::cout << "Crea --> sDos Objeto;\n";
-    std::cout << "Ejecuta --> sUno &dMemoria = Objeto;\n";
-    sDos Objeto;
-    sUno &dMemoria = Objeto; // upcast vía conversión implícita
-    std::cout << "Dirección de memoria de Objeto:\t\033[31m" << &dMemoria << "\033[0m\n";
-    std::cout << "Llama a función --> dMemoria.fUno();\n" << dMemoria.fUno();
-    sDos &dMemoria_sc = static_cast<sDos &>(dMemoria); // downcast vía conversión implícita
-    std::cout << "Dirección de memoria de Objeto:\t\033[31m" << &dMemoria_sc << "\033[0m\n";
-    std::cout << "Llama a función --> dMemoria_sc.fUno();\n" << dMemoria_sc.fUno();
+    vector<int *> vpUno(LongVector, nullptr);
+    cout << "Crea vector de punteros e inicializa a nullptr);\n";
+    cout << "Ejecuta --> vector<int *> vpUno(LongVector, nullptr);\n\n";
+    
+    cout << "Bucle for para rellenar e imprimir todo el vector\n";
+    for (int i = 0; i < LongVector; i++)
+    {
+        vpUno[i] = &vUno[i];
+        cout << "Dirección almacenada en el vector: \033[34m" << &vpUno[i] << "\033[0m -->  " << vpUno[i] << "\n";
+
+    }
 }

@@ -37,3 +37,7 @@ constPunterosReferencias.cpp: const -> punteros memoria y referencias
 25-01-2022
 
 ArreglosBasico-I.cpp:   Manejo básico de Arrays, Arreglos, Matriz, Vectores
+
+26-01-2022
+
+ArreglosBasico-II.cpp:   Manejo básico de vectores y vectores de punteros
