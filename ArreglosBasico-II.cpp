@@ -40,14 +40,21 @@ int main()
 
     // ***************************************************************************
     vector<int *> vpUno(LongVector, nullptr);
-    cout << "Crea vector de punteros e inicializa a nullptr);\n";
+    cout << "Crea vector de punteros \"vpUno\" e inicializa a nullptr);\n";
     cout << "Ejecuta --> vector<int *> vpUno(LongVector, nullptr);\n\n";
     
     cout << "Bucle for para rellenar e imprimir todo el vector\n";
     for (int i = 0; i < LongVector; i++)
     {
         vpUno[i] = &vUno[i];
-        cout << "Dirección almacenada en el vector: \033[34m" << &vpUno[i] << "\033[0m -->  " << vpUno[i] << "\n";
-
+        cout << "Dirección almacenada en el vector: \033[36m" << &vpUno[i] 
+        << "\033[0m -->  \033[34m" << vpUno[i] << "\033[0m\n";
+    }
+    cout << "\n";
+    cout << "Modificando el valor del vector vUno desreferenciando con vpUno\n";
+    for (int i = 0; i < LongVector; i++)
+    {
+        *vpUno[i] = 10 + i ;
+        cout << "Valor modificado en el vector: \033[34m" << vUno[i] << "\033[0m\n";
     }
 }

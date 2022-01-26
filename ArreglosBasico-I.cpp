@@ -7,9 +7,6 @@
 */
 #include <iostream>
 #include <stdio.h>
-#define NC "\e[0m"
-#define Blanco "\e[0;37m"
-#define Amarillo "\e[0;33m"
 using std::cin;
 using std::cout;
 // using namespace std;
