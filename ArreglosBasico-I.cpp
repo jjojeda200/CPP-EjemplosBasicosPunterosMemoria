@@ -11,6 +11,23 @@ using std::cin;
 using std::cout;
 // using namespace std;
 
+void ArrayPunteros()
+{
+    cout << "\e[0;33m Accediendo al arreglo por punteros\e[0m\n";
+    int Array[] = {100, 101, 102, 103, 104};
+    cout << '\n';
+
+    cout << "Valor inicial\tValor nuevo\tDirec. Memoria\n";
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "    " << Array[i] << "\t";
+        *(Array + i) += 100;              // <--
+        cout << "\t    " << *(Array + i) << "\t";
+        cout << "\t" << (Array + i) << "\n";
+    }    
+
+}
+
 int potAlg(int a, int b)
 {
     int valor = 0;
@@ -114,8 +131,10 @@ void dinamicMA() // Matrices Dinámicas
 int main()
 {
     system("clear");
-    staticMA();         // Matrices Dinámicas
+
+    ArrayPunteros();
+    staticMA(); // Matrices Dinámicas
     cout << '\n';
     multMA();
-    dinamicMA();
+    //dinamicMA();
 }
