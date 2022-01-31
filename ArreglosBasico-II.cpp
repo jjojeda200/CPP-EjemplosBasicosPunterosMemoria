@@ -43,7 +43,7 @@ int main()
     cout << "Crea vector de punteros \"vpUno\" e inicializa a nullptr);\n";
     cout << "Ejecuta --> vector<int *> vpUno(LongVector, nullptr);\n\n";
     
-    cout << "Bucle for para rellenar e imprimir todo el vector\n";
+    cout << "Bucle for para rellenar e imprimir todo el vector de punteros\n";
     for (int i = 0; i < LongVector; i++)
     {
         vpUno[i] = &vUno[i];
@@ -51,10 +51,40 @@ int main()
         << "\033[0m -->  \033[34m" << vpUno[i] << "\033[0m\n";
     }
     cout << "\n";
+/* 
+    // ***************************************************************************
+    cout << "Recorriendo y modificando el vector con --> std::vector<int>::iterator it\n";
+    for (std::vector<int>::iterator it = vUno.begin(); it != vUno.end(); ++it)
+    {
+        cout << "Recorriendo el vector: \033[34m" << *it << "\033[0m \n";
+    }
+    cout << "\n";
+*/
+    // ***************************************************************************
+    cout << "Recorriendo y modificando el vector con --> auto it = vUno.beg ...\n";
+    for (auto it = vUno.begin(); it != vUno.end(); ++it)
+    {
+        vUno[*it] += 10;
+        cout << "Recorriendo el vector: \033[34m" << *it << "\033[0m\n";
+    }
+    cout << "\n";
+
+    // ***************************************************************************
+    cout << "Recorriendo y modificando el vector con --> int  Elemento : vUno\n";
+    for (int  Elemento : vUno)
+    {
+        Elemento += 10;
+        cout << "Valor modificado en el vector: \033[34m" << Elemento << "\033[0m\n";
+    }
+    cout << "\n";
+
+    // ***************************************************************************
     cout << "Modificando el valor del vector vUno desreferenciando con vpUno\n";
     for (int i = 0; i < LongVector; i++)
     {
-        *vpUno[i] = 10 + i ;
+        *vpUno[i] = 50 + i ;
         cout << "Valor modificado en el vector: \033[34m" << vUno[i] << "\033[0m\n";
     }
+    cout << "\n";
+
 }
