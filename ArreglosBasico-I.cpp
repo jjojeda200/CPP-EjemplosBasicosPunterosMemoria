@@ -2,7 +2,7 @@
     José Juan Ojeda Granados, 25-01-2022
     Práctica básica I de manejo de arreglos
 
-    Manejo básico de Arrays, Arreglos, Matriz, Vectores
+    Manejo básico de Arrays, Arreglos, Matriz
 
 */
 #include <iostream>
