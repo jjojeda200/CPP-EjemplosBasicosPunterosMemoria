@@ -3,6 +3,7 @@
     Práctica básica I de manejo de arreglos
 
     Manejo básico de Arrays, Arreglos, Matriz
+    Array/arreglos --> realmente Punteros :-)
 
 */
 #include <iostream>
