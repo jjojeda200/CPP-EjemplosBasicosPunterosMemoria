@@ -9,6 +9,8 @@
      * Para desreferenciar, acceder directamente al contenido de una ubicación de memoria
        almacenada en una variable puntero.
      & Para mostrar la dirección de memoria de cualquier variable.
+
+     Vectores https://www.cplusplus.com/reference/vector/vector/
 */
 #include <vector>
 #include <iostream>
