@@ -1,6 +1,6 @@
 /*
-José Juan Ojeda Granados, 04-12-2021
-Práctica básica I de manejo de punteros de memoria
+     José Juan Ojeda Granados, 04-12-2021
+     Práctica básica I de manejo de punteros de memoria
 */
 #include <iostream>
 #include <stdio.h>

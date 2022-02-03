@@ -41,3 +41,7 @@ ArreglosBasico-I.cpp:   Manejo básico de Arrays, Arreglos, Matriz, Vectores
 26-01-2022
 
 ArreglosBasico-II.cpp:   Manejo básico de vectores y vectores de punteros
+
+03-02-2022
+
+ArreglosBasico-III.cpp:  Vectores Entendiendo y optimizando std::vector (Retroman)

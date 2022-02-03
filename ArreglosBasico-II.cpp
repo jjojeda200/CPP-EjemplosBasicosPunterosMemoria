@@ -50,7 +50,7 @@ int main()
     {
         vpUno[i] = &vUno[i];
         cout << "Dirección almacenada en el vector: \033[36m" << &vpUno[i] 
-        << "\033[0m -->  \033[34m" << vpUno[i] << "\033[0m\n";
+        << "\033[0m -->  \033[34m" << vpUno[i] << " " << vpUno.size() << " " << vpUno.capacity() << "\033[0m\n";
     }
     cout << "\n";
 /* 
