@@ -4,27 +4,27 @@
 
 04-12-2021
 
-PunterosBasico-[I, II, III].cpp: Manejo de punteros a memoria stack y heap
+PunterosBasico-[I, II, III].cpp:    Manejo de punteros a memoria stack y heap
 
 06-12-2021
 
-DesarrolloListas.cpp: Práctica avanzada de manejo de listas, punteros a memoria stack y heap
+DesarrolloListas.cpp:   Práctica avanzada de manejo de listas, punteros a memoria stack y heap
 
 10-01-2022
 
-PunterosBasico-IV.cpp: Repaso básico punteros
+PunterosBasico-IV.cpp:  Repaso básico punteros
 
 10-01-2022
 
-PunterosClases.cpp: Punteros memoria y utilización con clases
+PunterosClases.cpp:     Punteros memoria y utilización con clases
 
 10-01-2022
 
-PunterosFunciones.cpp: Pasando parámetros a funciones por medio de punteros memoria
+PunterosFunciones.cpp:  Pasando parámetros a funciones por medio de punteros memoria
 
 11-01-2022
 
-PunterosDobles.cpp: Punteros dobles, puntero de puntero - Memoria estática y dinámica
+PunterosDobles.cpp:     Punteros dobles, puntero de puntero - Memoria estática y dinámica
 
 12-01-2022
 
@@ -40,8 +40,17 @@ ArreglosBasico-I.cpp:   Manejo básico de Arrays, Arreglos, Matriz, Vectores
 
 26-01-2022
 
-ArreglosBasico-II.cpp:   Manejo básico de vectores y vectores de punteros
+ArreglosBasico-II.cpp:  Manejo básico de vectores y vectores de punteros
 
 03-02-2022
 
-ArreglosBasico-III.cpp:  Vectores Entendiendo y optimizando std::vector (Retroman)
+ArreglosBasico-III.cpp: Vectores Entendiendo y optimizando std::vector (Retroman)
+
+24-08.2022
+
+PunterosMalloc.cpp:     Biblioteca de gestión de memoria de C
+
+06-09-2022
+
+LeerMemoria00.cpp:      Análisis del uso de la memoria en array imprimiendo zonas usando punteros
+LeerMemoria01.cpp:      Análisis del uso de la memoria en array/vectores imprimiendo zonas usando punteros
