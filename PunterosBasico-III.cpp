@@ -87,8 +87,9 @@ int main()
     cout << "Valor Almacenado en la dirección apuntada por *punC \t" << Blanco << *punC << NC << endl;
     cout << endl;
 
-    *punB = 0;
-    *punC = 0;
+    printf("\e[0;34mSe borra el contenido del puntero y el puntero con delete\e[0m\n\n");
+    punB = nullptr;
+    punC = nullptr;
     delete punB;
     delete punC;
 
