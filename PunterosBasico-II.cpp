@@ -25,9 +25,9 @@ Ambas opciones son validas pero se aconseja usar el operador flecha (->).
 struct Nodo // Declaración de la estructura de tipo de dato creado
 {
     // SubDatos que componen el dato "Nodo"
-    int Dato;        // Primer tipo de subdato
-                     //  string Elemento; // Segundo tipo de subdato
-    Nodo *Siguiente; // Variable para almacenar el apuntador al siguiente "Nodo"
+    int Dato;               // Primer tipo de subdato
+    //  string Elemento;    // Segundo tipo de subdato
+    Nodo *Siguiente;        // Variable para almacenar el apuntador al siguiente "Nodo"
 };
 
 struct Nodo *listaA = nullptr;

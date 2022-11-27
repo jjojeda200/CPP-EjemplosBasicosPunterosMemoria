@@ -55,3 +55,8 @@ PunterosMalloc.cpp:     Biblioteca de gestión de memoria de C
 LeerMemoria00.cpp:      Análisis del uso de la memoria en array imprimiendo zonas usando punteros
 
 LeerMemoria01.cpp:      Análisis del uso de la memoria en array/vectores imprimiendo zonas usando punteros
+
+20-11-2022
+
+PunterosBasico-IV.cpp:  Llamadas a funciones por medio de punteros
+
