@@ -58,5 +58,5 @@ LeerMemoria01.cpp:      Análisis del uso de la memoria en array/vectores imprim
 
 20-11-2022
 
-PunterosBasico-IV.cpp:  Llamadas a funciones por medio de punteros
+PunterosBasico-V.cpp:   Llamadas a funciones por medio de punteros
 

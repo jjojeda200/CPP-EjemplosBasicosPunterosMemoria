@@ -1,14 +1,11 @@
 /***************************************************************************************
     José Juan Ojeda Granados
     Fecha:        10-10-2022
-    Titulo:       00ViewMem.hpp
+    Titulo:       PunterosBasic-V.cpp
     Descripción:  Análisis de uso de la memoria visualizando zonas usando punteros
 
     Referencias:
-    https://es.cppreference.com/w/cpp/container/array
-    https://es.cppreference.com/w/cpp/container/vector
-    https://en.cppreference.com/w/c/io/fprintf
-
+    
 ***************************************************************************************/
 #include <iostream>
 using namespace std;
